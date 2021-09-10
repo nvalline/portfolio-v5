@@ -19,6 +19,11 @@ function navbar() {
 			<div className={navStyles.mobileNav}>
 				<Burger />
 			</div>
+			<div className={navStyles.navLinks}>
+				<a href='#'>about</a>
+				<a href='#'>my work</a>
+				<a href='#'>contact</a>
+			</div>
 		</nav>
 	);
 }

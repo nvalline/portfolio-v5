@@ -1,35 +1,49 @@
 .navContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 3rem;
-  width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 3rem;
+	width: 100%;
 
-  // !REMOVE
-  background-color: $primary-dark-blue;
+	// !REMOVE
+	background-color: $primary-dark-blue;
+	.logoContainer {
+		.logoImage {
+			width: 4.3rem;
+			height: auto;
+		}
+	}
 
-  .logoImage {
-    width: 6rem;
-    height: auto;
-  }
+	.mobileNav {
+		.burgerIcon {
+			// height: 2rem;
+			// width: 2rem;
+			// position: fixed;
+			// top: 2.4rem;
+			// right: 3.5rem;
+			// display: flex;
+			// flex-flow: column nowrap;
+			// justify-content: space-around;
+			// cursor: pointer;
 
-  .burgerIcon {
-    height: 2rem;
-		width: 2rem;
-		position: fixed;
-		top: 2.4rem;
-		right: 3.5rem;
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-around;
-		cursor: pointer;
+			> span {
+				display: block;
+				background-color: $primary-white;
+				border-radius: 10px;
+				height: 3px;
+				width: 24px;
+				// transform-origin: 1px;
 
-    .burgerLine {
-      background-color: $primary-white;
-      border-radius: 10px;
-      height: 0.25rem;
-      width: 2rem;
-      transform-origin: 1px;
-    }
-  }
+				&:not(:last-child) {
+					margin-bottom: 4px;
+				}
+			}
+		}
+	}
+	.navLinks {
+		a {
+			color: $primary-light-blue;
+			font-size: 1.4rem;
+		}
+	}
 }
