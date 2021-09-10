@@ -1,13 +1,10 @@
-import React, {useState} from 'react'
-import navStyles from '../../styles/Nav.module.scss'
+import React, { useState } from 'react';
+import navStyles from '../../styles/Nav.module.scss';
 
 const burger = () => {
-  return (
-    <>
-      <div
-				className={navStyles.burgerIcon}
-				onClick={() => handleClick()}
-			>
+	return (
+		<>
+			<div className={navStyles.burgerIcon} onClick={() => handleClick()}>
 				<div className={navStyles.burgerLine}></div>
 				<div className={navStyles.burgerLine}></div>
 				<div className={navStyles.burgerLine}></div>
@@ -17,13 +14,13 @@ const burger = () => {
 			</div>
 			<div className='yellow-wrapper'>
 				<div className='menu-wrapper'>
-			{/* <div className='yellow-wrapper' ref={(el) => (yellowBoxRef = el)}>
+					{/* <div className='yellow-wrapper' ref={(el) => (yellowBoxRef = el)}>
 				<div className='menu-wrapper' ref={(el) => (menuRef = el)}> */}
 					{/* <RightNav showLinks={showLinks} /> */}
 				</div>
 			</div>
-    </>
-  )
-}
+		</>
+	);
+};
 
 export default burger;
