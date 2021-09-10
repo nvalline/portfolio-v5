@@ -1,0 +1,35 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+  width: 100%;
+
+  // !REMOVE
+  background-color: $primary-dark-blue;
+
+  .logoImage {
+    width: 6rem;
+    height: auto;
+  }
+
+  .burgerIcon {
+    height: 2rem;
+		width: 2rem;
+		position: fixed;
+		top: 2.4rem;
+		right: 3.5rem;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		cursor: pointer;
+
+    .burgerLine {
+      background-color: $primary-white;
+      border-radius: 10px;
+      height: 0.25rem;
+      width: 2rem;
+      transform-origin: 1px;
+    }
+  }
+}

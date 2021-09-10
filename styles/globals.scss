@@ -1,25 +1,19 @@
-// Primary Colors
-$primary-yellow: #F0D43A;
-$primary-dark-blue: #3B4A6B;
-$primary-light-blue: #22B2DA;
-$primary-white: #fafafa;
-$primary-pink: #F23557;
-
-// Font Variables
-$primary-font: 'Comfortaa', sans-serif;
-$main-header-font: 'Cinzel', serif;
-$content-font: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Comfortaa:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: $primary-font;
+  font-size: 10px;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 * {
