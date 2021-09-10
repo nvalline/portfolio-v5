@@ -1,7 +1,12 @@
+import Link from 'next/link'
+import navStyles from '../styles/Nav.module.scss'
+
 function navbar() {
   return (
     <nav>
-      <h3>Nate Valline</h3>      
+      <Link href='/'>
+        <a>Nate Valline</a>
+      </Link>    
     </nav>
   )
 }
