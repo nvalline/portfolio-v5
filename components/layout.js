@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Navbar from './navBar/navbar';
+import Overlay from './overlay';
+import navStyles from '../styles/Nav.module.scss';
 
 function Layout({ children }) {
 	return (
@@ -10,7 +12,14 @@ function Layout({ children }) {
 				{/* Favicon */}
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Navbar />
+
+			{/* HEADER CONTENT */}
+			<header className={navStyles.header}>
+				<Navbar />
+				<Overlay />
+			</header>
+
+			{/* MAIN CONTENT */}
 			<main>{children}</main>
 		</>
 	);

@@ -9,8 +9,6 @@ export default function Home() {
 				<title>Nate Valline | Web Developer</title>
 			</Head>
 
-			{/* <div className={navStyles.overlay}></div> */}
-
 			<div>
 				<h1>Nate Valline Portfolio v. 5</h1>
 			</div>
