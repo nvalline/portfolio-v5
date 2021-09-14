@@ -1,16 +1,8 @@
-import React, { useState } from 'react';
+import { useGlobalContext } from '../../context/main-context';
 import navStyles from '../../styles/Nav.module.scss';
 
 const burger = () => {
-	const [burgerIsActive, setBurgerIsActive] = useState(false);
-
-	const handleBurger = () => {
-		if (!burgerIsActive) {
-			setBurgerIsActive(true);
-		} else {
-			setBurgerIsActive(false);
-		}
-	};
+	const { burgerIsActive, handleNavToggle } = useGlobalContext();
 
 	return (
 		<>
@@ -20,7 +12,7 @@ const burger = () => {
 						? `${navStyles.burgerIcon} ${navStyles.burgerOpen}`
 						: navStyles.burgerIcon
 				}
-				onClick={handleBurger}
+				onClick={handleNavToggle}
 			>
 				<span></span>
 				<span></span>
