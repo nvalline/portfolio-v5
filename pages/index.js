@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
+import Hero from '../components/hero/hero';
 
 export default function Home() {
 	return (
@@ -9,9 +10,7 @@ export default function Home() {
 				<title>Nate Valline | Web Developer</title>
 			</Head>
 
-			<div>
-				<h1>Nate Valline Portfolio v. 5</h1>
-			</div>
+			<Hero />
 		</Layout>
 	);
 }

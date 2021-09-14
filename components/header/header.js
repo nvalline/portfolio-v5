@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Overlay from './overlay';
 import Navbar from './navBar/navbar';
 import MobileMenu from './mobileMenu';
@@ -14,6 +14,14 @@ function header() {
 			setBurgerIsActive(true);
 		}
 	};
+
+	useEffect(() => {
+		if (burgerIsActive) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = 'unset';
+		}
+	}, [burgerIsActive]);
 
 	return (
 		<header className={navStyles.header}>
