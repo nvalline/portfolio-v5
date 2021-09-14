@@ -1,9 +1,6 @@
-import { useGlobalContext } from '../../context/main-context';
-import navStyles from '../../styles/Nav.module.scss';
+import navStyles from '../../../styles/Nav.module.scss';
 
-const burger = () => {
-	const { burgerIsActive, handleNavToggle } = useGlobalContext();
-
+const burger = ({ burgerIsActive, toggleNav }) => {
 	return (
 		<>
 			<button
@@ -12,7 +9,7 @@ const burger = () => {
 						? `${navStyles.burgerIcon} ${navStyles.burgerOpen}`
 						: navStyles.burgerIcon
 				}
-				onClick={handleNavToggle}
+				onClick={toggleNav}
 			>
 				<span></span>
 				<span></span>

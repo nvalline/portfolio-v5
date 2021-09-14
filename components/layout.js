@@ -1,7 +1,5 @@
 import Head from 'next/head';
-import Navbar from './navBar/navbar';
-import Overlay from './overlay';
-import navStyles from '../styles/Nav.module.scss';
+import Header from './header/header';
 
 function Layout({ children }) {
 	return (
@@ -14,10 +12,7 @@ function Layout({ children }) {
 			</Head>
 
 			{/* HEADER CONTENT */}
-			<header className={navStyles.header}>
-				<Navbar />
-				<Overlay />
-			</header>
+			<Header />
 
 			{/* MAIN CONTENT */}
 			<main>{children}</main>

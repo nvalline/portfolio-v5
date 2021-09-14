@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Burger from './burger';
-import navStyles from '../../styles/Nav.module.scss';
+import navStyles from '../../../styles/Nav.module.scss';
 
-function navbar() {
+function navbar(props) {
 	return (
 		<nav className={navStyles.navContainer}>
 			<div className={navStyles.logoContainer}>
@@ -17,7 +17,7 @@ function navbar() {
 				</Link>
 			</div>
 			<div className={navStyles.mobileNav}>
-				<Burger />
+				<Burger {...props} />
 			</div>
 			<div className={navStyles.navLinks}>
 				<a href='#'>about</a>
