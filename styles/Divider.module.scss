@@ -1,0 +1,28 @@
+@import 'variables';
+
+.divider {
+	position: relative;
+	height: 5rem;
+	width: 100%;
+	border-top: 20px solid $primary-light-blue;
+	background-color: $primary-white;
+
+	.circle {
+		position: relative;
+		top: -20px;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 5rem;
+		width: 10rem;
+		border-radius: 0 0 50px 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $primary-light-blue;
+
+		.icon {
+			color: $primary-white;
+			font-size: 3rem;
+		}
+	}
+}
