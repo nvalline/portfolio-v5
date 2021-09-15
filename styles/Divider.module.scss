@@ -2,14 +2,13 @@
 
 .divider {
 	position: relative;
-	height: 5rem;
+	height: 2rem;
 	width: 100%;
-	border-top: 20px solid $primary-light-blue;
-	background-color: $primary-white;
+	background-color: $primary-light-blue;
 
 	.circle {
 		position: relative;
-		top: -20px;
+		top: 0;
 		left: 50%;
 		transform: translateX(-50%);
 		height: 5rem;
