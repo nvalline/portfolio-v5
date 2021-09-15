@@ -2,7 +2,7 @@
 
 .container {
 	// !Adjust height width media queries
-	height: 400px;
+	min-height: 30rem;
 	width: 100%;
 
 	.bgImg {
@@ -33,6 +33,7 @@
 				> h3 {
 					color: $primary-light-blue;
 					font-size: 1.4rem;
+					font-weight: 800;
 					margin: 0;
 					padding: 0;
 				}
@@ -41,6 +42,7 @@
 			> h1 {
 				color: $primary-white;
 				font-size: 2.2rem;
+				font-weight: 800;
 				margin: 1rem 0;
 				padding: 0;
 
@@ -52,9 +54,18 @@
 			> h2 {
 				color: $primary-white;
 				font-size: 1.6rem;
+				font-weight: 400;
 				margin: 0;
 				padding: 0;
 			}
+		}
+
+		.ctaContainer {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 2rem 0;
 		}
 	}
 }
