@@ -2,7 +2,7 @@
 
 .workContainer {
 	background-color: $primary-light-blue;
-	padding: 0 2rem 4rem;
+	padding: 0 2rem 3rem;
 
 	.header {
 		width: 100%;
@@ -35,56 +35,60 @@
 		}
 	}
 
-	.card {
+	.cardContainer {
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		flex-wrap: wrap;
 		justify-content: center;
-		border-radius: 10px;
-		padding: 2rem;
-		box-shadow: 4px 4px 4px rgba($color: $primary-dark-blue, $alpha: 0.25);
-		background-color: $primary-white;
 
-		&:not(:last-child) {
-			margin-bottom: 2rem;
-		}
-
-		> img {
+		.card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
 			border-radius: 10px;
-			width: 20rem;
-		}
+			margin: 0 2rem 2rem;
+			padding: 2rem;
+			box-shadow: 4px 4px 4px rgba($color: $primary-dark-blue, $alpha: 0.25);
+			background-color: $primary-white;
+			max-width: 26rem;
 
-		> h3 {
-			margin: 1rem 0;
-			font-family: $content-font;
-			font-size: 1.6rem;
-			font-weight: 400;
-			color: $primary-dark-blue;
-		}
+			> img {
+				border-radius: 10px;
+				width: 20rem;
+			}
 
-		> p {
-			margin: 0;
-			text-align: center;
-			font-family: $content-font;
-			font-size: 1.3rem;
-			font-weight: 400;
-			color: $primary-dark-blue;
-		}
+			> h3 {
+				margin: 1rem 0;
+				font-family: $content-font;
+				font-size: 1.6rem;
+				font-weight: 400;
+				color: $primary-dark-blue;
+			}
 
-		.projectBtn {
-			margin-top: 2rem;
-			border: none;
-			border-radius: 10px;
-			box-shadow: 0 2px 2px rgba($color: $primary-dark-blue, $alpha: 1);
-			background-color: $primary-pink;
-			padding: 1rem 2rem;
-			color: $primary-white;
-			font-family: $primary-font;
-			cursor: pointer;
-		}
+			> p {
+				margin: 0;
+				text-align: center;
+				font-family: $content-font;
+				font-size: 1.3rem;
+				font-weight: 400;
+				color: $primary-dark-blue;
+			}
 
-		.projectBtn:hover {
-			background-color: $secondary-pink;
+			.projectBtn {
+				margin-top: 2rem;
+				border: none;
+				border-radius: 10px;
+				box-shadow: 0 2px 2px rgba($color: $primary-dark-blue, $alpha: 1);
+				background-color: $primary-pink;
+				padding: 1rem 2rem;
+				color: $primary-white;
+				font-family: $primary-font;
+				cursor: pointer;
+			}
+
+			.projectBtn:hover {
+				background-color: $secondary-pink;
+			}
 		}
 	}
 }

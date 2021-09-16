@@ -1,17 +1,19 @@
 @import 'variables';
+@import 'mixins';
 
 .container {
 	// !Adjust height width media queries
-	min-height: 30rem;
-	width: 100%;
+	height: 30rem;
+
+	@include breakpoint-up(medium) {
+		height: 40rem;
+	}
 
 	.bgImg {
 		background-image: url('/images/nv_portfolio_background.jpg');
 		background-size: cover;
 		padding: 2rem;
-		min-height: 30rem;
 		height: 100%;
-		width: 100%;
 
 		.contentBlock {
 			background-color: rgba($color: #353535, $alpha: 0.5);

@@ -13,9 +13,11 @@ function work() {
 				subtitle='Get to know more about my work'
 				className={workStyles.header}
 			/>
-			{projectData.slice(0, 4).map((project) => {
-				return <ProjectCard key={project.id} {...project} />;
-			})}
+			<div className={workStyles.cardContainer}>
+				{projectData.slice(0, 4).map((project) => {
+					return <ProjectCard key={project.id} {...project} />;
+				})}
+			</div>
 		</section>
 	);
 }
