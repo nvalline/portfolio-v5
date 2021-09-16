@@ -1,0 +1,43 @@
+@import 'variables';
+
+.footerContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top: 3px solid $primary-light-blue;
+	background-color: $primary-dark-blue;
+	padding: 2rem;
+
+	.social {
+		margin-top: 1rem;
+		width: 7rem;
+		text-align: center;
+		font-family: $content-font;
+
+		> h3 {
+			margin: 0;
+			color: $primary-white;
+			font-size: 1.4rem;
+			font-weight: 400;
+		}
+
+		> hr {
+			height: 1px;
+			border: none;
+			background-color: $primary-yellow;
+		}
+
+		> a {
+			margin-bottom: 0.5rem;
+			display: block;
+			color: $primary-white;
+			font-size: 1.2rem;
+			font-weight: 400;
+		}
+	}
+
+	.logoImage {
+		width: 4.3rem;
+		height: auto;
+	}
+}
