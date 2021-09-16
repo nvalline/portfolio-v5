@@ -1,32 +1,94 @@
 @import 'variables';
 
-.header {
-	width: 100%;
-	padding: 4rem 2rem 2rem;
+.bioContainer {
 	background-color: $primary-white;
-	text-align: center;
 
-	> h3 {
-		margin: 1rem 0;
-		color: $primary-dark-blue;
-		font-family: $content-font;
-		font-size: 1.4rem;
-		font-weight: 400;
+	.header {
+		width: 100%;
+		padding: 4rem 2rem 0;
+		text-align: center;
+
+		> h3 {
+			margin: 1rem 0;
+			color: $primary-dark-blue;
+			font-family: $content-font;
+			font-size: 1.4rem;
+			font-weight: 400;
+		}
+
+		> h2 {
+			margin: 0.5rem 0;
+			color: $primary-light-blue;
+			font-family: $main-header-font;
+			font-size: 1.6rem;
+			font-weight: 800;
+			letter-spacing: 1.1px;
+		}
+
+		> hr {
+			margin: 1.8rem auto;
+			border: none;
+			background-color: $primary-dark-blue;
+			height: 0.2rem;
+			width: 10rem;
+		}
 	}
 
-	> h2 {
-		margin: 0.5rem 0;
-		color: $primary-light-blue;
-		font-family: $main-header-font;
-		font-size: 1.6rem;
-		font-weight: 800;
-	}
+	.contentWrapper {
+		padding: 0 2rem;
 
-	> hr {
-		margin: 1.8rem auto;
-		border: none;
-		background-color: $primary-dark-blue;
-		height: 0.2rem;
-		width: 10rem;
+		.bioContent {
+			text-align: center;
+
+			> h3 {
+				margin: 0;
+				color: $primary-light-blue;
+				font-size: 1.3rem;
+				font-weight: 800;
+			}
+
+			> p {
+				color: $primary-dark-blue;
+				font-family: $content-font;
+				font-size: 1.2rem;
+			}
+		}
+
+		.bioSkills {
+			padding-top: 1rem;
+
+			> h3 {
+				margin: 0;
+				text-align: center;
+				color: $primary-light-blue;
+				font-size: 1.3rem;
+				font-weight: 800;
+			}
+
+			.skillBtns {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				padding: 1.5rem 1rem;
+
+				> h4 {
+					display: inline-block;
+					min-width: 5.5rem;
+					border-radius: 5px;
+					margin: 0 0 1rem 0;
+					padding: 1rem;
+					text-align: center;
+					background-color: $primary-gray;
+					color: $primary-dark-blue;
+					font-size: 1.3rem;
+					font-weight: 800;
+					letter-spacing: 1.1px;
+
+					&:not(:last-child) {
+						margin-right: 1rem;
+					}
+				}
+			}
+		}
 	}
 }
