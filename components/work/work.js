@@ -14,7 +14,7 @@ function work() {
 				className={workStyles.header}
 			/>
 			{projectData.slice(0, 4).map((project) => {
-				return <ProjectCard {...project} />;
+				return <ProjectCard key={project.id} {...project} />;
 			})}
 		</section>
 	);
