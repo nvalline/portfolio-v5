@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 import Hero from '../components/hero/hero';
 import Divider from '../components/divider/divider';
+import Bio from '../components/bio/bio';
 
 export default function Home() {
 	return (
@@ -16,6 +17,9 @@ export default function Home() {
 
 			{/* Divider */}
 			<Divider />
+
+			{/* Bio Section */}
+			<Bio />
 		</Layout>
 	);
 }
