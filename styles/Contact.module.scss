@@ -1,0 +1,84 @@
+@import 'variables';
+
+.contactContainer {
+	background-color: $primary-dark-blue;
+	padding: 2rem;
+
+	.header {
+		width: 100%;
+		text-align: center;
+
+		> h3 {
+			margin: 1rem 0;
+			color: $primary-yellow;
+			font-family: $content-font;
+			font-size: 1.4rem;
+			font-weight: 400;
+		}
+
+		> h2 {
+			margin: 0.5rem 0;
+			color: $primary-white;
+			font-family: $main-header-font;
+			font-size: 1.8rem;
+			font-weight: 800;
+			letter-spacing: 1.1px;
+		}
+
+		> hr {
+			margin: 1.8rem auto;
+			border: none;
+			background-color: $primary-yellow;
+			height: 0.2rem;
+			width: 10rem;
+		}
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.input {
+			width: 24rem;
+			margin-bottom: 1rem;
+			padding: 1rem 0.5rem;
+			border: none;
+			border-radius: 5px;
+			font-family: $primary-font;
+			font-size: 1.2rem;
+			font-weight: 400;
+			background-color: $primary-white;
+			color: $secondary-dark-blue;
+		}
+
+		.textarea {
+			width: 24rem;
+			margin-bottom: 1rem;
+			padding: 1rem 0.5rem;
+			border: none;
+			border-radius: 5px;
+			font-family: $primary-font;
+			font-size: 1.2rem;
+			font-weight: 400;
+			background-color: $primary-white;
+			color: $secondary-dark-blue;
+		}
+
+		.button {
+			padding: 1rem 2rem;
+			border: none;
+			border-radius: 5px;
+			background-color: $primary-pink;
+			font-family: $primary-font;
+			font-size: 1.4rem;
+			font-weight: 800;
+			color: $primary-white;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $secondary-pink;
+			}
+		}
+	}
+}

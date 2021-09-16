@@ -4,6 +4,7 @@ import Hero from '../components/hero/hero';
 import Divider from '../components/divider/divider';
 import Bio from '../components/bio/bio';
 import Work from '../components/work/work';
+import Contact from '../components/contact/contact';
 
 export default function Home() {
 	return (
@@ -24,6 +25,9 @@ export default function Home() {
 
 			{/* Project Section */}
 			<Work />
+
+			{/* Contact Section */}
+			<Contact />
 		</Layout>
 	);
 }
