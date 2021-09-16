@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Hero from '../components/hero/hero';
 import Divider from '../components/divider/divider';
 import Bio from '../components/bio/bio';
+import Work from '../components/work/work';
 
 export default function Home() {
 	return (
@@ -20,6 +21,9 @@ export default function Home() {
 
 			{/* Bio Section */}
 			<Bio />
+
+			{/* Project Section */}
+			<Work />
 		</Layout>
 	);
 }
