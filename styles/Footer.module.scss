@@ -16,14 +16,15 @@
 	}
 
 	.social {
-		margin-top: 1rem;
-		width: 7rem;
-		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 2rem;
 		font-family: $content-font;
 
 		@include breakpoint-up(large) {
 			width: 50%;
-			text-align: left;
+			align-items: flex-start;
 		}
 
 		> h3 {
@@ -34,6 +35,7 @@
 		}
 
 		> hr {
+			width: 7rem;
 			height: 1px;
 			border: none;
 			background-color: $primary-yellow;
