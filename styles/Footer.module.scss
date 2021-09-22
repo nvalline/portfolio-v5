@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 .footerContainer {
 	display: flex;
@@ -8,11 +9,22 @@
 	background-color: $primary-dark-blue;
 	padding: 2rem;
 
+	@include breakpoint-up(large) {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		padding: 3rem 6rem;
+	}
+
 	.social {
 		margin-top: 1rem;
 		width: 7rem;
 		text-align: center;
 		font-family: $content-font;
+
+		@include breakpoint-up(large) {
+			width: 50%;
+			text-align: left;
+		}
 
 		> h3 {
 			margin: 0;
@@ -25,6 +37,12 @@
 			height: 1px;
 			border: none;
 			background-color: $primary-yellow;
+
+			@include breakpoint-up(large) {
+				width: 7rem;
+				text-align: left;
+				margin-left: 0;
+			}
 		}
 
 		> a {
@@ -39,5 +57,9 @@
 	.logoImage {
 		width: 4.3rem;
 		height: auto;
+
+		@include breakpoint-up(large) {
+			transform: translateX(-50%);
+		}
 	}
 }
