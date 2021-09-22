@@ -74,6 +74,11 @@
 				&:not(:last-child) {
 					margin-right: 4rem;
 				}
+
+				&:hover {
+					color: $primary-gray;
+					border-bottom: 1px solid $primary-gray;
+				}
 			}
 
 			@include breakpoint-down(medium) {

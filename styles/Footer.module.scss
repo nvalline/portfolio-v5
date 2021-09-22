@@ -51,6 +51,10 @@
 			color: $primary-white;
 			font-size: 1.2rem;
 			font-weight: 200;
+
+			&:hover {
+				color: $primary-light-blue;
+			}
 		}
 	}
 

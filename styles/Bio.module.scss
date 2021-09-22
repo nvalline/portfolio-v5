@@ -47,12 +47,12 @@
 		}
 
 		@include breakpoint-up(large) {
+			height: 30rem;
 			display: flex;
 			padding-left: 4rem;
 		}
 
 		@include breakpoint-up(xlarge) {
-			height: 30rem;
 			padding-top: 4rem;
 		}
 
