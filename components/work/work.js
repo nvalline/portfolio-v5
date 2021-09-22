@@ -7,7 +7,7 @@ function work() {
 	const projectData = projects.sort((a, b) => (a.id < b.id ? 1 : -1));
 
 	return (
-		<section className={workStyles.workContainer}>
+		<section className={workStyles.workContainer} id='my_work'>
 			<SectionHeader
 				title='Latest Projects'
 				subtitle='Get to know more about my work'

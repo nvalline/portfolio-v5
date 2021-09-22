@@ -20,9 +20,15 @@ function navbar(props) {
 				<Burger {...props} />
 			</div>
 			<div className={navStyles.navLinks}>
-				<a href='#'>about</a>
-				<a href='#'>my work</a>
-				<a href='#'>contact</a>
+				<Link href='/#about'>
+					<a>about</a>
+				</Link>
+				<Link href='/#my_work'>
+					<a>my work</a>
+				</Link>
+				<Link href='/#contact'>
+					<a>contact</a>
+				</Link>
 			</div>
 		</nav>
 	);

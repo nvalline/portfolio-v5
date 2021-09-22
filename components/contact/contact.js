@@ -4,7 +4,7 @@ import contactStyles from '../../styles/Contact.module.scss';
 
 function contact() {
 	return (
-		<section className={contactStyles.contactContainer}>
+		<section className={contactStyles.contactContainer} id='contact'>
 			<SectionHeader
 				title='Message Me'
 				subtitle='Get in touch to see how I can help'

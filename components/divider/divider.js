@@ -3,7 +3,7 @@ import dividerStyles from '../../styles/Divider.module.scss';
 
 function divider() {
 	return (
-		<div className={dividerStyles.divider}>
+		<div className={dividerStyles.divider} id='about'>
 			<div className={dividerStyles.circle}>
 				<CgScrollV className={dividerStyles.icon} />
 			</div>
