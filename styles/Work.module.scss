@@ -57,6 +57,10 @@
 			background-color: $primary-white;
 			max-width: 26rem;
 
+			@include breakpoint-up(large) {
+				margin: 0 3rem 4rem;
+			}
+
 			> img {
 				border-radius: 10px;
 				width: 20rem;

@@ -9,7 +9,7 @@ function navbar(props) {
 				<Link href='/'>
 					<a>
 						<img
-							src='/images/nv_initials.png'
+							src='/images/nv_initials.svg'
 							alt='NV Logo'
 							className={navStyles.logoImage}
 						/>

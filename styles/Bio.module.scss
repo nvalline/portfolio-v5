@@ -5,6 +5,10 @@
 	padding: 4rem 2rem 2rem;
 	background-color: $primary-white;
 
+	@include breakpoint-up(large) {
+		padding: 4rem 2rem;
+	}
+
 	.header {
 		width: 100%;
 		text-align: center;
@@ -42,10 +46,26 @@
 			padding: 2rem;
 		}
 
+		@include breakpoint-up(large) {
+			display: flex;
+			padding-left: 4rem;
+		}
+
+		@include breakpoint-up(xlarge) {
+			height: 30rem;
+			padding-top: 4rem;
+		}
+
 		.bioContent {
 			margin: 0 auto;
 			max-width: 60rem;
 			text-align: center;
+
+			@include breakpoint-up(large) {
+				margin-right: 2rem;
+				width: 50%;
+				text-align: left;
+			}
 
 			> h3 {
 				margin: 0;
@@ -69,12 +89,22 @@
 				padding-top: 3rem;
 			}
 
+			@include breakpoint-up(large) {
+				width: 50%;
+				padding-top: 0;
+			}
+
 			> h3 {
 				margin: 0;
 				text-align: center;
 				color: $primary-light-blue;
 				font-size: 1.3rem;
 				font-weight: 800;
+
+				@include breakpoint-up(large) {
+					text-align: left;
+					padding-left: 1rem;
+				}
 			}
 
 			.skillBtns {
@@ -82,6 +112,10 @@
 				flex-wrap: wrap;
 				justify-content: center;
 				padding: 1.5rem 1rem;
+
+				@include breakpoint-up(large) {
+					justify-content: flex-start;
+				}
 
 				> h4 {
 					display: inline-block;

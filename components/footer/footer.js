@@ -5,7 +5,7 @@ function footer() {
 	return (
 		<footer className={footerStyles.footerContainer}>
 			<img
-				src='/images/nv_initials.png'
+				src='/images/nv_initials.svg'
 				alt='NV Logo'
 				className={footerStyles.logoImage}
 			/>

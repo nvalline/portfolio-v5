@@ -9,6 +9,10 @@
 		height: 40rem;
 	}
 
+	@include breakpoint-up(xlarge) {
+		height: 47rem;
+	}
+
 	.bgImg {
 		background-image: url('/images/nv_portfolio_background.jpg');
 		background-size: cover;
