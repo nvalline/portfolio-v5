@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Overlay from './overlay';
 import Navbar from './navBar/navbar';
@@ -6,6 +7,7 @@ import navStyles from '../../styles/Nav.module.scss';
 
 function header() {
 	const [burgerIsActive, setBurgerIsActive] = useState(false);
+	const router = useRouter();
 
 	const toggleNav = () => {
 		if (burgerIsActive === true) {
@@ -14,6 +16,12 @@ function header() {
 			setBurgerIsActive(true);
 		}
 	};
+
+	useEffect(() => {
+		if (burgerIsActive) {
+			setBurgerIsActive(false);
+		}
+	}, [router.asPath]);
 
 	useEffect(() => {
 		if (burgerIsActive) {
