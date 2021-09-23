@@ -4,6 +4,8 @@
 
 .header {
 	position: relative;
+	background-color: $primary-black;
+	transition: background-color 200ms ease-in-out;
 	z-index: 1;
 
 	.navContainer {
@@ -13,7 +15,6 @@
 		justify-content: space-between;
 		padding: 0.5rem 3rem;
 		width: 100%;
-		background-color: $primary-black;
 
 		@include breakpoint-up(large) {
 			padding: 1rem 6rem;
@@ -94,7 +95,7 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-image: linear-gradient($primary-black 40%, transparent);
+		background-image: linear-gradient($primary-dark-blue 50%, transparent);
 	}
 
 	.mobMenuContainer {
@@ -124,4 +125,16 @@
 	.fadeOut {
 		animation: fade-out 200ms ease-in-out forwards;
 	}
+}
+
+.navScrolled {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+	background-color: $primary-dark-blue;
+
+	// ! Slide Down & Slide Up classes
+	animation: slide-down 300ms ease-in forwards;
 }
