@@ -3,7 +3,7 @@ import Button from '../forms/buttons';
 import heroStyles from '../../styles/Hero.module.scss';
 import btnStyles from '../../styles/Buttons.module.scss';
 
-function heroCta() {
+function HeroCta() {
 	const router = useRouter();
 
 	return (
@@ -24,4 +24,4 @@ function heroCta() {
 	);
 }
 
-export default heroCta;
+export default HeroCta;

@@ -5,7 +5,7 @@ import Navbar from './navBar/navbar';
 import MobileMenu from './mobileMenu';
 import navStyles from '../../styles/Nav.module.scss';
 
-function header() {
+function Header() {
 	const [burgerIsActive, setBurgerIsActive] = useState(false);
 	const router = useRouter();
 
@@ -42,4 +42,4 @@ function header() {
 	);
 }
 
-export default header;
+export default Header;

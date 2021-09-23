@@ -4,7 +4,7 @@ import ContactForm from './contactForm';
 import SuccessMsg from './success';
 import contactStyles from '../../styles/Contact.module.scss';
 
-function contact() {
+function Contact() {
 	const [showForm, setShowForm] = useState(true);
 
 	return (
@@ -23,4 +23,4 @@ function contact() {
 	);
 }
 
-export default contact;
+export default Contact;

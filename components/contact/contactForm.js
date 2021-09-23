@@ -4,7 +4,7 @@ import { TextInput, Textarea } from '../forms/formItems';
 import Button from '../forms/buttons';
 import contactStyles from '../../styles/Contact.module.scss';
 
-function contactForm({ setShowForm }) {
+function ContactForm({ setShowForm }) {
 	const form = useRef();
 
 	const sendEmail = (event) => {
@@ -60,4 +60,4 @@ function contactForm({ setShowForm }) {
 	);
 }
 
-export default contactForm;
+export default ContactForm;
