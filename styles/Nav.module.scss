@@ -3,9 +3,11 @@
 @import 'animations';
 
 .header {
-	position: relative;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
 	background-color: $primary-black;
-	transition: background-color 200ms ease-in-out;
 	z-index: 1;
 
 	.navContainer {
@@ -125,16 +127,4 @@
 	.fadeOut {
 		animation: fade-out 200ms ease-in-out forwards;
 	}
-}
-
-.navScrolled {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-	background-color: $primary-dark-blue;
-
-	// ! Slide Down & Slide Up classes
-	animation: slide-down 300ms ease-in forwards;
 }

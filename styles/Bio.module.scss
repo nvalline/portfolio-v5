@@ -2,15 +2,17 @@
 @import 'mixins';
 
 .bioContainer {
+	height: 95vh;
 	padding: 4rem 2rem 2rem;
 	background-color: $primary-white;
 
 	@include breakpoint-up(large) {
-		padding: 4rem 2rem;
+		padding: 9rem 2rem;
 	}
 
 	.header {
 		width: 100%;
+		padding: 2rem 0;
 		text-align: center;
 
 		> h3 {
@@ -58,7 +60,7 @@
 
 		.bioContent {
 			margin: 0 auto;
-			max-width: 60rem;
+			max-width: 40rem;
 			text-align: center;
 
 			@include breakpoint-up(large) {
@@ -82,8 +84,9 @@
 		}
 
 		.bioSkills {
-			padding-top: 1rem;
+			padding-top: 2rem;
 			margin: 0 auto;
+			max-width: 40rem;
 
 			@include breakpoint-up(medium) {
 				padding-top: 3rem;

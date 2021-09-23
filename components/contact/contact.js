@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import SectionHeader from '../sectionHeaders';
 import ContactForm from './contactForm';
+import SuccessMsg from './success';
 import contactStyles from '../../styles/Contact.module.scss';
 
 function contact() {
+	const [showForm, setShowForm] = useState(true);
+
 	return (
 		<section className={contactStyles.contactContainer} id='contact'>
 			<SectionHeader
@@ -10,7 +14,11 @@ function contact() {
 				subtitle='Get in touch to see how I can help'
 				className={contactStyles.header}
 			/>
-			<ContactForm />
+			{showForm === true ? (
+				<ContactForm setShowForm={setShowForm} />
+			) : (
+				<SuccessMsg />
+			)}
 		</section>
 	);
 }

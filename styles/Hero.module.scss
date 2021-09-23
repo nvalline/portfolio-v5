@@ -2,19 +2,26 @@
 @import 'mixins';
 
 .container {
-	height: 50rem;
+	height: 84vh;
+	margin-top: 5rem;
 
 	.bgImg {
 		background-image: url('/images/nv_portfolio_background.jpg');
 		background-size: cover;
-		padding: 5rem 2rem 2rem;
+		padding: 10rem 2rem 2rem;
 		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
 		@include breakpoint-up(large) {
-			padding: 2rem;
-			display: flex;
-			align-items: center;
+			flex-direction: row;
 			justify-content: space-evenly;
+			padding: 0 5rem 9rem;
+		}
+
+		@include breakpoint-up(xlarge) {
+			padding: 0 8rem 9rem;
 		}
 
 		.contentBlock {
