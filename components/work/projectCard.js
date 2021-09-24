@@ -1,11 +1,13 @@
-import Link from 'next/link';
+import Image from 'next/image';
 import Button from '../forms/buttons';
 import workStyles from '../../styles/Work.module.scss';
 
 function projectCard({ id, title, description, link, img }) {
 	return (
 		<div className={workStyles.card}>
-			<img src={img} alt={title} />
+			<div className={workStyles.imageContainer}>
+				<Image src={img} alt={title} layout='fill' />
+			</div>
 			<h3>{title}</h3>
 			<p>{description}</p>
 			<Button

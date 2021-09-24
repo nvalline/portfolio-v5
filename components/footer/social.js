@@ -8,7 +8,7 @@ function social() {
 			<hr />
 			{socialLinks.map((link) => {
 				return (
-					<a href={link.url} target='_blank' key={link.id}>
+					<a href={link.url} target='_blank' key={link.id} rel='noreferrer'>
 						{link.name}
 					</a>
 				);

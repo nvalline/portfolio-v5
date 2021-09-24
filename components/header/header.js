@@ -19,9 +19,7 @@ function Header() {
 
 	// Update burger state on route change
 	useEffect(() => {
-		if (burgerIsActive) {
-			setBurgerIsActive(false);
-		}
+		setBurgerIsActive(false);
 	}, [router.asPath]);
 
 	// Disable scroll when overlay is active

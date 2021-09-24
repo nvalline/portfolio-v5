@@ -23,9 +23,21 @@
 		}
 
 		.logoContainer {
-			.logoImage {
-				width: 4.3rem;
-				height: auto;
+			> a {
+				.imageContainer {
+					width: 4.3rem;
+					height: 4.3rem;
+
+					> div {
+						position: unset !important;
+
+						.logoImage {
+							position: relative !important;
+							width: 100%;
+							height: unset !important;
+						}
+					}
+				}
 			}
 		}
 

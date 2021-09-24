@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Burger from './burger';
 import navStyles from '../../../styles/Nav.module.scss';
+import logoPic from '../../../public/images/nv_initials.svg';
 
 function navbar(props) {
 	return (
@@ -8,11 +10,14 @@ function navbar(props) {
 			<div className={navStyles.logoContainer}>
 				<Link href='/'>
 					<a>
-						<img
-							src='/images/nv_initials.svg'
-							alt='NV Logo'
-							className={navStyles.logoImage}
-						/>
+						<div className={navStyles.imageContainer}>
+							<Image
+								src={logoPic}
+								alt='NV Logo'
+								className={navStyles.logoImage}
+								layout='fill'
+							/>
+						</div>
 					</a>
 				</Link>
 			</div>
