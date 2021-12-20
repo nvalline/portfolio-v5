@@ -68,17 +68,12 @@
 			}
 
 			.imageContainer {
+				position: relative;
+				height: 10rem;
 				width: 20rem;
 
-				> div {
-					position: unset !important;
-
-					> img {
-						position: relative !important;
-						width: 100%;
-						height: unset !important;
-						border-radius: 10px;
-					}
+				.card__image {
+					border-radius: 10px;
 				}
 			}
 

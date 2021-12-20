@@ -1,4 +1,4 @@
-import SectionHeader from '../sectionHeaders';
+import SectionHeader from '../misc/sectionHeaders';
 import ProjectCard from './projectCard';
 import workStyles from '../../styles/Work.module.scss';
 import { projects } from '../../data/projects';

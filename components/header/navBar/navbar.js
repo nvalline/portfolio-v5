@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import { ImageFill } from '../../misc/Images';
 import Burger from './burger';
 import navStyles from '../../../styles/Nav.module.scss';
 import logoPic from '../../../public/images/nv_initials.svg';
@@ -11,11 +11,10 @@ function navbar(props) {
 				<Link href='/'>
 					<a>
 						<div className={navStyles.imageContainer}>
-							<Image
+							<ImageFill
 								src={logoPic}
 								alt='NV Logo'
 								className={navStyles.logoImage}
-								layout='fill'
 							/>
 						</div>
 					</a>

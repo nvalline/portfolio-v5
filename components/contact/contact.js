@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import SectionHeader from '../sectionHeaders';
+import SectionHeader from '../misc/sectionHeaders';
 import ContactForm from './contactForm';
 import SuccessMsg from './success';
 import contactStyles from '../../styles/Contact.module.scss';

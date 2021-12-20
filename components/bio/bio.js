@@ -1,4 +1,4 @@
-import SectionHeader from '../sectionHeaders';
+import SectionHeader from '../misc/sectionHeaders';
 import BioContent from '../bio/bioContent';
 import BioSkills from '../bio/bioSkills';
 import bioStyles from '../../styles/Bio.module.scss';
