@@ -1,9 +1,8 @@
 import SectionHeader from '../misc/sectionHeaders';
 import ProjectCard from './projectCard';
 import workStyles from '../../styles/Work.module.scss';
-import { projects } from '../../data/projects';
 
-function work() {
+function work({ projects }) {
 	const projectData = projects.sort((a, b) => (a.id < b.id ? 1 : -1));
 
 	return (

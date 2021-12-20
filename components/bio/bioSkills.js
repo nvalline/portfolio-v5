@@ -1,7 +1,6 @@
 import bioStyles from '../../styles/Bio.module.scss';
-import { skills } from '../../data/skills';
 
-function bioSkills() {
+function bioSkills({ skills }) {
 	return (
 		<div className={bioStyles.bioSkills}>
 			<h3>Skills</h3>

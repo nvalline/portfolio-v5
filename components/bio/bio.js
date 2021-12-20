@@ -3,7 +3,7 @@ import BioContent from '../bio/bioContent';
 import BioSkills from '../bio/bioSkills';
 import bioStyles from '../../styles/Bio.module.scss';
 
-function bio() {
+function bio({ skills }) {
 	return (
 		<section className={bioStyles.bioContainer}>
 			<SectionHeader
@@ -13,7 +13,7 @@ function bio() {
 			/>
 			<div className={bioStyles.contentWrapper}>
 				<BioContent />
-				<BioSkills />
+				<BioSkills skills={skills} />
 			</div>
 		</section>
 	);

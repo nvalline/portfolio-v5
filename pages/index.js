@@ -6,7 +6,10 @@ import Bio from '../components/bio/bio';
 import Work from '../components/work/work';
 import Contact from '../components/contact/contact';
 
-export default function Home() {
+import { projectData } from '../data/projects';
+import { skillsList } from '../data/skills';
+
+export default function Home({ projects, skills }) {
 	return (
 		<>
 			<Head>
@@ -21,10 +24,10 @@ export default function Home() {
 			<Divider />
 
 			{/* Bio Section */}
-			<Bio />
+			<Bio skills={skills} />
 
 			{/* Project Section */}
-			<Work />
+			<Work projects={projects} />
 
 			{/* Contact Section */}
 			<Contact />
@@ -35,3 +38,12 @@ export default function Home() {
 Home.getLayout = function getLayout(page) {
 	return <Layout>{page}</Layout>;
 };
+
+export async function getStaticProps() {
+	return {
+		props: {
+			projects: projectData,
+			skills: skillsList
+		}
+	};
+}
