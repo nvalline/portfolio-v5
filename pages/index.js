@@ -5,11 +5,10 @@ import Divider from '../components/divider/divider';
 import Bio from '../components/bio/bio';
 import Work from '../components/work/work';
 import Contact from '../components/contact/contact';
-import Footer from '../components/footer/footer';
 
 export default function Home() {
 	return (
-		<Layout>
+		<>
 			<Head>
 				{/* Page Title */}
 				<title>Nate Valline | Web Developer</title>
@@ -29,9 +28,10 @@ export default function Home() {
 
 			{/* Contact Section */}
 			<Contact />
-
-			{/* Footer Section */}
-			<Footer />
-		</Layout>
+		</>
 	);
 }
+
+Home.getLayout = function getLayout(page) {
+	return <Layout>{page}</Layout>;
+};
