@@ -33,7 +33,7 @@ export const projectData = [
 		id: 4,
 		title: 'Nova Art Restoration',
 		description:
-			'Nova Art Restoration is a custom Wordpress website for an art resetoration company.  Custom CSS was added to the theme to provide the client with the look and feel desired.',
+			'Nova Art Restoration is a custom Wordpress website for an art restoration company.  Custom CSS was added to the theme to provide the client with the look and feel desired.',
 		link: 'https://novaartrestoration.com/',
 		img: '/images/projectImg/novaartrestoration.png',
 		img_blur:
