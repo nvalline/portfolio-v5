@@ -1,9 +1,10 @@
-import { createClient, createImageUrlBuilder } from '@sanity/client';
+import { createClient, createImageUrlBuilder } from 'next-sanity';
 
 const config = {
 	projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
 	dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
-	useCdn: process.env.NODE_ENV === 'production'
+	useCdn: process.env.NODE_ENV === 'production',
+	apiVersion: '2021-12-22'
 	/**
 	 * Set the useCdn to 'false' if app requires the freshest data always (potentially slightly slower and a bit more expensive).
 	 * Authenticated request (like preview) will always bypass the CDN.

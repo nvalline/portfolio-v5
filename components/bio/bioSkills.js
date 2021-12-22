@@ -5,9 +5,9 @@ function bioSkills({ skills }) {
 		<div className={bioStyles.bioSkills}>
 			<h3>Skills</h3>
 			<div className={bioStyles.skillBtns}>
-				{skills.map((skill) => {
+				{/* {skills.map((skill) => {
 					return <h4 key={skill.id}>{skill.skill}</h4>;
-				})}
+				})} */}
 			</div>
 		</div>
 	);

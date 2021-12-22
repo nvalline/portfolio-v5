@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import { sanityClient } from '../sanity';
+
 import Layout from '../components/Layout';
 import Hero from '../components/hero/hero';
 import Divider from '../components/divider/divider';
@@ -39,11 +41,30 @@ Home.getLayout = function getLayout(page) {
 	return <Layout>{page}</Layout>;
 };
 
-export async function getStaticProps() {
-	return {
-		props: {
-			projects: projectData,
-			skills: skillsList
-		}
-	};
+// export async function getStaticProps() {
+// 	return {
+// 		props: {
+// 			// projects: projectData,
+// 			skills: skillsList
+// 		}
+// 	};
+// }
+
+export async function getServerSideProps() {
+	const query = `*[_type == 'project' && active == true]`;
+	const projects = await sanityClient.fetch(query);
+
+	if (!projects.length) {
+		return {
+			props: {
+				projects: []
+			}
+		};
+	} else {
+		return {
+			props: {
+				projects
+			}
+		};
+	}
 }

@@ -3,7 +3,9 @@ import ProjectCard from './projectCard';
 import workStyles from '../../styles/Work.module.scss';
 
 function work({ projects }) {
-	const projectData = projects.sort((a, b) => (a.id < b.id ? 1 : -1));
+	const projectData = projects.sort((a, b) =>
+		a._createdAt < b._createdAt ? 1 : -1
+	);
 
 	return (
 		<section className={workStyles.workContainer} id='my_work'>
@@ -13,8 +15,8 @@ function work({ projects }) {
 				className={workStyles.header}
 			/>
 			<div className={workStyles.cardContainer}>
-				{projectData.slice(0, 4).map((project) => {
-					return <ProjectCard key={project.id} {...project} />;
+				{projectData.map((project) => {
+					return <ProjectCard key={project._id} {...project} />;
 				})}
 			</div>
 		</section>
