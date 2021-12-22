@@ -8,9 +8,6 @@ import Bio from '../components/bio/bio';
 import Work from '../components/work/work';
 import Contact from '../components/contact/contact';
 
-import { projectData } from '../data/projects';
-import { skillsList } from '../data/skills';
-
 export default function Home({ projects, skills }) {
 	return (
 		<>
@@ -41,30 +38,19 @@ Home.getLayout = function getLayout(page) {
 	return <Layout>{page}</Layout>;
 };
 
-// export async function getStaticProps() {
-// 	return {
-// 		props: {
-// 			// projects: projectData,
-// 			skills: skillsList
-// 		}
-// 	};
-// }
-
 export async function getServerSideProps() {
-	const query = `*[_type == 'project' && active == true]`;
-	const projects = await sanityClient.fetch(query);
+	const projectsQuery = `*[_type == 'project' && active == true]`;
+	const skillsQuery = `*[_type == 'skill']`;
 
-	if (!projects.length) {
-		return {
-			props: {
-				projects: []
-			}
-		};
-	} else {
-		return {
-			props: {
-				projects
-			}
-		};
-	}
+	const projects = await sanityClient.fetch(projectsQuery);
+	const skillArray = await sanityClient.fetch(skillsQuery);
+
+	const skills = skillArray[0].skill;
+
+	return {
+		props: {
+			projects,
+			skills
+		}
+	};
 }
