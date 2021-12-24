@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { sanityClient } from '../sanity';
 import { urlFor } from '../sanity';
 
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import Hero from '../components/hero/hero';
 import Divider from '../components/divider/divider';
 import Bio from '../components/bio/bio';
