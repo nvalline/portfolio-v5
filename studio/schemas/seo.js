@@ -1,11 +1,17 @@
 export default {
-	name: 'home_seo',
-	title: 'Home SEO',
+	name: 'seo',
+	title: 'SEO',
 	type: 'document',
 	fields: [
 		{
+			name: 'seo_title',
+			title: 'SEO Title',
+			type: 'string'
+		},
+		{
 			name: 'page_title',
 			title: 'Page Title',
+			description: 'Website page title',
 			type: 'string'
 		},
 		{
@@ -32,6 +38,7 @@ export default {
 		{
 			name: 'og_image',
 			title: 'OG Image',
+			description: 'Facebook, LinkedIn',
 			type: 'image',
 			options: {
 				hotspot: true
