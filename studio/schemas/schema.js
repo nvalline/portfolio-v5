@@ -5,6 +5,7 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // We import object and document schema
+import home_seo from './home_seo';
 import project from './project';
 import skill from './skill';
 
@@ -16,6 +17,7 @@ export default createSchema({
 	// to the ones provided by any plugins that are installed
 	types: schemaTypes.concat([
 		/* Your types here! */
+		home_seo,
 		project,
 		skill
 	])
