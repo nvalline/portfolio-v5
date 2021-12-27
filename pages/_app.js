@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }) {
 				<meta charSet='utf-8' />
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 			</Head>
-			{/* <Script
+			<Script
 				id='ga-tag-url'
 				strategy='lazyOnload'
 				src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -26,7 +26,7 @@ export default function MyApp({ Component, pageProps }) {
 
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
         `}
-			</Script> */}
+			</Script>
 			{getLayout(<Component {...pageProps} />)}
 		</>
 	);
