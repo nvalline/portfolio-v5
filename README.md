@@ -33,9 +33,14 @@ This Next.js application is fully responsive and utilizes some new tech (like Sa
 
 ## Technologies
 
-![GitHub Top Language](https://img.shields.io/github/languages/top/nvalline/portfolio-v5) ![GitHub language count](https://img.shields.io/github/languages/count/nvalline/portfolio-v5)
-
-- Next.js, React.js, Javascript, Node.js, HTML, SCSS, EmailJS, Sanity.io
+- Next.js
+- React.js
+- Javascript
+- Node.js
+- HTML
+- SCSS
+- EmailJS
+- Sanity.io
 
 [Back To The Top](#project-name)
 
