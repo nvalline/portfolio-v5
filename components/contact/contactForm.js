@@ -35,18 +35,21 @@ function ContactForm({ setShowForm }) {
 				name='from_name'
 				className={contactStyles.input}
 				placeholder='Name'
+				required={true}
 			/>
 			<TextInput
 				type='email'
 				name='from_email'
 				className={contactStyles.input}
 				placeholder='Email'
+				required={true}
 			/>
 			<TextInput
 				type='text'
 				name='subject'
 				className={contactStyles.input}
 				placeholder='Subject'
+				required={true}
 			/>
 			<Textarea
 				id='message'
@@ -54,6 +57,7 @@ function ContactForm({ setShowForm }) {
 				rows='5'
 				placeholder='Message'
 				className={contactStyles.textarea}
+				required={true}
 			/>
 			<Button type='submit' className={contactStyles.button} text='Send' />
 		</form>
