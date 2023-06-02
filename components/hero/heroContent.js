@@ -10,7 +10,7 @@ function heroContent() {
 			<h1>
 				I am <span>Nate Valline</span>
 			</h1>
-			<h2>I am a Front-End Software Engineer</h2>
+			<h2>I am a Full Stack Software Engineer with a focus on the Front End</h2>
 		</div>
 	);
 }
