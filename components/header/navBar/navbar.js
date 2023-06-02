@@ -8,31 +8,23 @@ function navbar(props) {
 	return (
 		<nav className={navStyles.navContainer}>
 			<div className={navStyles.logoContainer}>
-				<Link href='/'>
-					<a>
-						<div className={navStyles.imageContainer}>
-							<ImageFill
-								src={logoPic}
-								alt='NV Logo'
-								className={navStyles.logoImage}
-							/>
-						</div>
-					</a>
+				<Link href='/' passHref>
+					<div className={navStyles.imageContainer}>
+						<ImageFill
+							src={logoPic}
+							alt='NV Logo'
+							className={navStyles.logoImage}
+						/>
+					</div>
 				</Link>
 			</div>
 			<div className={navStyles.mobileNav}>
 				<Burger {...props} />
 			</div>
 			<div className={navStyles.navLinks}>
-				<Link href='/#about'>
-					<a>about</a>
-				</Link>
-				<Link href='/#my_work'>
-					<a>my work</a>
-				</Link>
-				<Link href='/#contact'>
-					<a>contact</a>
-				</Link>
+				<Link href='/#about'>about</Link>
+				<Link href='/#my_work'>my work</Link>
+				<Link href='/#contact'>contact</Link>
 			</div>
 		</nav>
 	);

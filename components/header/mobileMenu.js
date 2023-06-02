@@ -10,15 +10,9 @@ function mobileMenu({ burgerIsActive }) {
 					: `${navStyles.mobMenuContainer} ${navStyles.fadeOut}`
 			}
 		>
-			<Link href='/#about'>
-				<a>about</a>
-			</Link>
-			<Link href='/#my_work'>
-				<a>my work</a>
-			</Link>
-			<Link href='/#contact'>
-				<a>contact</a>
-			</Link>
+			<Link href='/#about'>about</Link>
+			<Link href='/#my_work'>my work</Link>
+			<Link href='/#contact'>contact</Link>
 		</div>
 	);
 }
