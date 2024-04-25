@@ -1,3 +1,5 @@
+import HeroCta from './heroCta';
+
 import heroStyles from '../../styles/Hero.module.scss';
 
 function heroContent() {
@@ -11,6 +13,7 @@ function heroContent() {
 				I am <span>Nate Valline</span>
 			</h1>
 			<h2>I am a Full Stack Software Engineer with a focus on the Front End</h2>
+			<HeroCta />
 		</div>
 	);
 }
